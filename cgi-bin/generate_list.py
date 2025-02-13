@@ -8,7 +8,7 @@ data_files = glob.glob("data/*.txt")
 athletes = athletemodel.put_to_store(data_files)
 
 print(yate.start_response())
-print(yate.include_header("Coach Kelly's List of Athletes"))
+print(yate.include_header("Anonymous's List of Athletes"))
 print(yate.start_form("generate_timing_data.py"))
 print(yate.para("Select an athlete from the list to work with:"))
 for each_athlete in athletes:
